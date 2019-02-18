@@ -33,16 +33,14 @@ public class SquishyNavigationButtons extends NavigationBarEffect {
     }
 
     protected List<FeedbackEffect> findFeedbackEffects(Navigator navigationBarView) {
-        int i;
         mViewController.clearViews();
+        // Back button views
         List views = navigationBarView.getBackButton().getViews();
-        for (i = 0; i < views.size(); i++) {
-            mViewController.addLeftView((View) views.get(i));
-        }
+        views.forEach(v -> mViewController.addLeftView((View) v));
+        // Recent button views
         views = navigationBarView.getRecentsButton().getViews();
-        for (i = 0; i < views.size(); i++) {
-            mViewController.addRightView((View) views.get(i));
-        }
+        views.forEach(v -> mViewController.addRightView((View) v));
+
         return Arrays.asList(new FeedbackEffect[]{mViewController});
     }
 

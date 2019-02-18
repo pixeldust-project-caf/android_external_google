@@ -10,15 +10,12 @@ import android.provider.Settings;
 import com.android.internal.util.du.Utils;
 import com.android.systemui.SysUiServiceProvider;
 import com.android.systemui.VendorServices;
-import com.android.systemui.R;
 import com.android.systemui.statusbar.phone.StatusBar;
 import com.google.android.systemui.dreamliner.DockObserver;
 import com.google.android.systemui.dreamliner.DreamlinerContext;
 import com.google.android.systemui.elmyra.ElmyraContext;
 import com.google.android.systemui.elmyra.ElmyraService;
 import com.google.android.systemui.elmyra.ServiceConfigurationGoogle;
-import java.io.FileDescriptor;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class GoogleServices extends VendorServices {
