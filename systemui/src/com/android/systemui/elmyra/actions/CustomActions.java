@@ -97,6 +97,13 @@ public class CustomActions extends Action {
             case 12: // Ringer modes
                 PixeldustUtils.toggleRingerModes(getContext());
                 break;
+            case 13: // Power Button
+                if (isScreenOn) {
+                    PixeldustUtils.switchScreenOff(getContext());
+                } else {
+                    PixeldustUtils.switchScreenOn(getContext());
+                }
+                break;
         }
     }
 
