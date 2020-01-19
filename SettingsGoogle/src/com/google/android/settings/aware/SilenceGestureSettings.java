@@ -22,7 +22,7 @@ public class SilenceGestureSettings extends DashboardFragment {
     }
 
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.DIRTYTWEAKS;
+        return MetricsProto.MetricsEvent.PIXELDUST;
     }
 
     public int getPreferenceScreenResId() {
