@@ -1,4 +1,4 @@
-package com.google.android.settings.aware;
+/*package com.google.android.settings.aware;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -77,4 +77,4 @@ public class AwareSettingsDialogPreference extends AwareDialogPreferenceBase {
 
         ImageView imageview = (ImageView) holder.findViewById(android.R.id.icon);
     }
-}
+}*/
