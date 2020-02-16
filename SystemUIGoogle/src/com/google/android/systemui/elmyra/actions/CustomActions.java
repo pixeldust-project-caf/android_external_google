@@ -83,7 +83,7 @@ public class CustomActions extends Action {
                 break;
             case 9: // Notification panel
                 if (isScreenOn) {
-                    // PixeldustUtils.toggleNotifications();
+                    PixeldustUtils.toggleNotifications();
                 }
                 break;
             case 10: // QS panel
