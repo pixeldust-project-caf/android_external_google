@@ -88,14 +88,14 @@ public class CustomActions extends Action {
                 break;
             case 10: // QS panel
                 if (isScreenOn) {
-                    // PixeldustUtils.toggleQsPanel();
+                    PixeldustUtils.toggleQsPanel();
                 }
                 break;
             case 11: // Clear notifications
-                // PixeldustUtils.clearAllNotifications();
+                PixeldustUtils.clearAllNotifications();
                 break;
             case 12: // Ringer modes
-                // PixeldustUtils.toggleRingerModes(getContext());
+                PixeldustUtils.toggleRingerModes(getContext());
                 break;
         }
     }
