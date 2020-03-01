@@ -97,6 +97,9 @@ public class CustomActions extends Action {
             case 12: // Ringer modes
                 PixeldustUtils.toggleRingerModes(getContext());
                 break;
+            case 13: // Kill app
+                PixeldustUtils.killForegroundApp();
+                break;
         }
     }
 
