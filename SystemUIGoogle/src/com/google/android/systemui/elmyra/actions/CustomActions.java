@@ -9,6 +9,7 @@ import android.os.UserHandle;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.view.KeyEvent;
 
 import com.android.internal.util.pixeldust.PixeldustUtils;
 import com.android.systemui.Dependency;
@@ -99,6 +100,12 @@ public class CustomActions extends Action {
                 break;
             case 13: // Kill app
                 PixeldustUtils.killForegroundApp();
+                break;
+            case 14: // Skip song
+                PixeldustUtils.sendSystemKeyToStatusBar(KeyEvent.KEYCODE_MEDIA_NEXT);
+                break;
+            case 15: // Previous song
+                PixeldustUtils.sendSystemKeyToStatusBar(KeyEvent.KEYCODE_MEDIA_PREVIOUS);
                 break;
         }
     }
